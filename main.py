@@ -329,7 +329,8 @@ if __name__ == "__main__":
     try:
         pano = create_panorama(image_paths, resize_to=maxdim)
         cv2.imwrite("panorama_out1.jpg", pano)
-        print("Saved panorama to panorama_out1.jpg")
+        print("Saved panorama to panorama_out.jpg")
     except Exception as e:
         print("Panorama creation failed:", e)
+
         sys.exit(1)                             
